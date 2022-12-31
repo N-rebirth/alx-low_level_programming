@@ -2,7 +2,7 @@
 
 
 /**
- *  *  _isupper - checks for uppercase character
+ *  *  _isdigit - checks for uppercase character
  *   *
  *    *   @c: the character to be checked
  *     *
