@@ -1,31 +1,53 @@
 #include <stdio.h>
-#include <unistd.h>
+
+
+
 /**
- *  * main - Entry point
- *   * Description: prints all possible different combinations of two digits
- *    * Return: 0
- *     */
+ *  *  * main - prints all possible different combinations of two digits
+ *   *
+ *    *   * Return: ALways 0 (Success)
+ *     *
+ */
+
 int main(void)
+
 {
-	int c, i,
 
-	    for (c = '0'; i <= '9'; c++)
-	    {
-		    for (i = '0'; i <= '9'; i++)
-		    {
-			    if (c < i)
-			    {
-				    putchar(c);
-				    putchar(i);
-				    if (c != '8' || (c == '8' && i != '9'))
-				    {
-					    putchar(',');
-					    putchar(',');
-				    }
-			    }
-		    }
-	    }
-	putchar ('\n');
+	int n, m;
+
+
+	for (n = 48; n <= 56; n++)
+
+	{
+
+		for (m = 49; m <= 57; m++)
+
+		{
+
+			if (m > n)
+
+			{
+
+				putchar(n);
+
+				putchar(m);
+
+				if (n != 56 || m != 57)
+
+				{
+
+					putchar(',');
+					putchar(' ');
+				}
+
+			}
+
+		}
+
+	}
+
+	putchar('\n');
+
 	return (0);
-}
 
+}
